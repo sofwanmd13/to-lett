@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const MenuDropDown = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const { auths, logOut } = useContext(AuthContext);
   const user = auths?.user;
   console.log("Menu",auths?.user?.user)

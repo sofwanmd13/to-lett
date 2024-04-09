@@ -420,6 +420,7 @@ const RoommateListForm = () => {
                   onFinish={onFinish}
                   onFinishFailed={onFinishFailed}
                   autoComplete="off"
+                  className="flex flex-col justify-center items-center "
                 >
                   <Form.Item name="images">
                     <Form.Item
@@ -438,6 +439,12 @@ const RoommateListForm = () => {
                       </Upload.Dragger>
                     </Form.Item>
                   </Form.Item>
+                    <button
+                  type="submit"
+                  className="btn btn-primary btn-wide text-white"
+                >
+                  Next
+                </button>
                 </Form>
               </div>
             </div>
@@ -459,7 +466,7 @@ const RoommateListForm = () => {
             >
               <div>
                 <div>
-                  <h1 className="font-bold text-2xl mb-5">Prefered Gender</h1>
+                  <h1 className="font-bold text-2xl mb-5">Select Gender</h1>
                   <Form.Item name="userGender">
                     <Radio.Group>
                       <Radio

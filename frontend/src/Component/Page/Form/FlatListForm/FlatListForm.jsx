@@ -329,13 +329,16 @@ const FlatListForm = () => {
                   span: 16,
                 }}
               >
-                <button
+              </Form.Item>
+              <div className=" w-full flex justify-center pb-16">
+              <button
                   type="submit"
                   className="btn btn-primary btn-wide text-white"
                 >
                   Next
                 </button>
-              </Form.Item>
+
+              </div>
             </Form>
           </div>
         </TabPane>
@@ -354,6 +357,7 @@ const FlatListForm = () => {
                   onFinish={onFinish}
                   onFinishFailed={onFinishFailed}
                   autoComplete="off"
+                  className="flex flex-col justify-center items-center"
                 >
                   <Form.Item name="images">
                     <Form.Item
@@ -372,6 +376,12 @@ const FlatListForm = () => {
                       </Upload.Dragger>
                     </Form.Item>
                   </Form.Item>
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-wide text-white"
+                >
+                  Next
+                </button>
                 </Form>
               </div>
             </div>

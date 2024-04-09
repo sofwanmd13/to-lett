@@ -10,7 +10,7 @@ const FindRoommate = () => {
   const [priceSort, setPriceSort] = useState("");
   const [gender, setGender] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [roommatesPerPage] = useState(8);
+  const [roommatesPerPage] = useState(16);
   const { auths } = useContext(AuthContext);
   const user = auths?.user;
 
@@ -119,6 +119,7 @@ const FindRoommate = () => {
             </option>
             <option>Female</option>
             <option>Male</option>
+            <option>All Gender</option>
           </select>
 
           <select

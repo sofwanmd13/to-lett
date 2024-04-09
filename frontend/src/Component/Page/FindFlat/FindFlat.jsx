@@ -9,7 +9,7 @@ const FindFlat = () => {
   const [searchValue, setSearchValue] = useState("");
   const [priceSort, setPriceSort] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [flatsPerPage] = useState(8);
+  const [flatsPerPage] = useState(16);
   const { auths } = useContext(AuthContext);
   const user = auths?.user;
 
